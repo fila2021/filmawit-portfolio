@@ -54,6 +54,17 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive layout */
 @media (max-width: 768px) {
   nav ul li {
