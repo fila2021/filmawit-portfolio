@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filmawit Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      section {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: 0 auto 60px auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      }
+      /* Highlight nav item on scroll can be added later if needed */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Filmawit G</h1>
+      <p>
+        Front End Web-Developer | Code Institute Student | Project Manager |
+        Continuous Learner
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="profile-section">
+        <img
+          src="images/profile.jpg"
+          alt="Profile picture of Filmawit Mekonen"
+          class="profile-pic"
+        />
+        <h2>About Me</h2>
+        <p>
+          Experienced Computer Science Lecturer and Risk Prevention Specialist
+          with a passion for teaching, mentoring, and data analytics. Proficient
+          in data collection, cleaning, transformation, and analysis. I excel in
+          cross-functional collaboration, project management, and
+          problem-solving.
+        </p>
+        <p>
+          I am a continuous learner currently pursuing a Diploma in Web
+          Application Development at Code Institute. I thrive in dynamic
+          environments and enjoy leveraging data to make informed decisions.
+        </p>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects & Experience</h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="images/askuala-thumbnail.png"
+              alt="Askuala website screenshot"
+            />
+            <h3>Askuala</h3>
+            <p>
+              A platform that curates free online scholarships from sites like
+              Coursera and edX.
+            </p>
+            <a href="askuala.html" target="_blank" class="btn">View Project</a>
+          </div>
+
+          <div class="project-card wip">
+            <img
+              src="https://via.placeholder.com/300x160?text=Project+2"
+              alt="Project Two screenshot"
+            />
+            <h3>Project Two (WIP)</h3>
+            <p>
+              This project is currently a work in progress and will be available
+              soon.
+            </p>
+            <button disabled class="btn btn-disabled">Coming Soon</button>
+          </div>
+
+          <div class="project-card wip">
+            <img
+              src="https://via.placeholder.com/300x160?text=Project+2"
+              alt="Project Two screenshot"
+            />
+            <h3>Project Three (WIP)</h3>
+            <p>This project is under development. Stay tuned for updates!</p>
+            <button disabled class="btn btn-disabled">Coming Soon</button>
+          </div>
+        </div>
+
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>
+            <strong>Project Manager</strong> at Meta – Access & Compromise
+            Operations (2025–Present)
+          </li>
+          <li>
+            <strong>Operations Specialist</strong> at Meta – Specialized
+            Enforcement (2023–2025)
+          </li>
+          <li>
+            <strong>Risk Prevention Specialist</strong> at Meta (2022–2023)
+          </li>
+          <li>
+            <strong>Senior Computer Science Lecturer</strong> at Adigrat
+            University (2014–2022)
+          </li>
+          <li>
+            <strong>Freelance Translator</strong> – English, Amharic, and
+            Tigrinya
+          </li>
+        </ul>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section id="tech-stack" class="tech-stack">
+        <h2>My Front-End Tech Stack</h2>
+        <div class="tech-item">
+          <img src="images/html5.png" alt="HTML5 Logo" />
+          <h3>HTML5</h3>
+          <p>
+            HTML5 provides the structure and content of the web. It's the
+            foundation of every webpage.
+          </p>
+        </div>
+        <div class="tech-item">
+          <img src="images/css3.png" alt="CSS3 Logo" />
+          <h3>CSS3</h3>
+          <p>
+            CSS3 styles and layouts the website. It allows for beautiful design
+            and responsive experiences.
+          </p>
+        </div>
+        <div class="tech-item">
+          <img src="images/bootstrap.png" alt="Bootstrap Logo" />
+          <h3>Bootstrap</h3>
+          <p>
+            A CSS framework that helps quickly build responsive layouts with
+            prebuilt components and grid system.
+          </p>
+        </div>
+        <div class="tech-item">
+          <img src="images/github-mark.png" alt="GitHub Logo" />
+          <h3>Git & GitHub</h3>
+          <p>
+            Version control and collaboration tools that allow you to manage and
+            share your code effectively.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>
+          Email:
+          <a href="mailto:filacrafts2012@gmail.com">filacrafts2012@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/filmawit-mekonen" target="_blank"
+            >filmawit-mekonen</a
+          >
+        </p>
+        <div class="form-wrapper">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Filmawit Mekonen Gebreegziabher</p>
+    </footer>
+  </body>
+</html>
