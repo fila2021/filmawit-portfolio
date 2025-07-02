@@ -61,6 +61,55 @@ nav ul li a:hover {
   color: #2c3e50;
 }
 
+/* Scholarships Grid */
+.scholarships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.scholarship-card {
+  background: #eaf4fc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(52, 152, 219, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scholarship-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.35);
+}
+
+.scholarship-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.scholarship-card p {
+  color: #34495e;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.scholarship-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.scholarship-link:hover {
+  background-color: #2980b9;
+}
+
 /* Form */
 form {
   display: flex;
