@@ -54,3 +54,15 @@ button {
   border: none;
   cursor: pointer;
 }
+/* Responsive layout */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main,
+  form {
+    padding: 10px;
+  }
+}
