@@ -35,3 +35,10 @@ footer {
   background: #333;
   color: #fff;
 }
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
