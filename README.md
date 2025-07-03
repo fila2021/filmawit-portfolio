@@ -44,7 +44,16 @@ This site is hosted on GitHub Pages and can be viewed live here:
 - Include screenshots and documentation for testing.
 - Possibly incorporate a CSS framework like Bootstrap for faster styling.
 
----
+## Testing
+
+I have documented the testing process for this website to ensure it works as expected.
+- Verified that all navigation links function correctly across pages.
+- Tested the website on multiple browsers (Chrome, Edge) to ensure consistent appearance and behavior.
+- Checked responsiveness on different screen sizes, including desktop, tablet, and mobile devices.
+- Validated the contact form fields for required input and proper form submission behavior.
+
+All testing notes and results are maintained here in the README for transparency and easy reference.
+
 
 Thanks for stopping by my portfolio! Feel free to reach out if you want to connect.
 
