@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Me</title>
+    <title>Contact</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -50,44 +50,77 @@
 
     <!-- Main -->
     <main class="container my-5 flex-grow-1">
-      <h2 class="text-center mb-4">Get in Touch</h2>
+      <h2 class="text-center mb-4">Let's Connect</h2>
+      <p class="text-center">
+        Feel free to reach out via email, LinkedIn, or the form below.
+      </p>
 
-      <form id="contactForm" class="mx-auto" style="max-width: 600px">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="form-control"
-            required
-            aria-label="Your Name"
-          />
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <form action="https://formdump.codeinstitute.net/" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Type your message here..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Links -->
+          <div class="text-center mt-4">
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:filacrafts2012@gmail.com"
+                >filacrafts2012@gmail.com</a
+              >
+            </p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a
+                href="https://www.linkedin.com/in/filmawit-mekonen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                filmawit-mekonen
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
-            required
-            aria-label="Your Email Address"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            class="form-control"
-            required
-            aria-label="Your Message"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark w-100">Send Message</button>
-      </form>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -95,31 +128,7 @@
       <p>&copy; 2025 Filmawit Mekonen Gebreegziabher</p>
     </footer>
 
-    <!-- Success Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content p-4 text-center">
-          <h5>✅ Message Sent</h5>
-          <p>Thank you for reaching out! I’ll get back to you soon.</p>
-          <button class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Show success modal on form submit
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const successModal = new bootstrap.Modal(
-            document.getElementById("successModal")
-          );
-          successModal.show();
-          this.reset();
-        });
-    </script>
   </body>
 </html>
