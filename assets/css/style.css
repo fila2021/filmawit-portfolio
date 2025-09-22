@@ -6,7 +6,7 @@ body {
   background-color: #f8f9fa;
   line-height: 1.6;
   scroll-behavior: smooth; /* ✅ smooth scrolling */
-  padding-top: 70px; /* ✅ prevent navbar overlap */
+  padding-top: 70px; /* ✅ prevent navbar overlap with fixed navbar */
 }
 
 h1,
@@ -36,29 +36,29 @@ h5 {
 }
 
 /* ==============================
-   Hero Section
+   Hero Section (#home)
    ============================== */
-.askuala-hero {
+#home {
   background: linear-gradient(135deg, #0d6efd, #6610f2);
   color: #fff;
   padding: 120px 20px;
   text-align: center;
 }
-.askuala-hero h1 {
+#home h1 {
   font-size: 3rem;
   font-weight: 700;
 }
-.askuala-hero p {
+#home p {
   font-size: 1.2rem;
   margin-top: 10px;
 }
-.askuala-hero .btn {
+#home .btn {
   border-radius: 30px;
   padding: 10px 25px;
 }
 
 /* ==============================
-   About Section
+   About Section (if added later)
    ============================== */
 .profile-pic {
   width: 160px;
@@ -72,7 +72,7 @@ h5 {
 /* ==============================
    Tech Stack
    ============================== */
-.tech-stack img {
+#tech img {
   width: 80px;
   height: 80px;
   object-fit: contain;
@@ -133,7 +133,7 @@ footer {
    Responsive Fixes
    ============================== */
 @media (max-width: 768px) {
-  .askuala-hero h1 {
+  #home h1 {
     font-size: 2rem;
   }
   .profile-pic {
