@@ -1,192 +1,143 @@
 /* ==============================
-   Global Styles & Overrides
+   Global Styles
    ============================== */
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa; /* Bootstrap light background */
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8f9fa;
   line-height: 1.6;
+  scroll-behavior: smooth; /* ✅ smooth scrolling */
+  padding-top: 70px; /* ✅ prevent navbar overlap */
 }
 
-/* Navbar overrides */
-.navbar-brand {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
-  letter-spacing: 0.5px;
+  color: #222;
 }
 
+/* ==============================
+   Navbar
+   ============================== */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar.scrolled {
+  background-color: #000 !important; /* darker on scroll */
+}
+.nav-link {
+  font-weight: 500;
+}
 .nav-link.active {
   font-weight: 600;
   text-decoration: underline;
 }
 
-/* Hero Section (Generic) */
-section#home,
-section.hero {
-  padding: 80px 20px;
+/* ==============================
+   Hero Section
+   ============================== */
+.askuala-hero {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  padding: 120px 20px;
   text-align: center;
 }
-
-/* Profile image styling */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover; /* ✅ crops instead of squeezing */
-  border-radius: 50%; /* ✅ keeps it circular */
-  display: block;
-  margin: 0 auto 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.askuala-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
-
-/* Responsive tweak for small screens */
-@media (max-width: 576px) {
-  .profile-pic {
-    max-width: 120px; /* ✅ smaller on mobile */
-  }
+.askuala-hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
-
-/* Card Tweaks */
-.card {
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.card-title {
-  color: #222;
-  font-weight: bold;
-}
-
-.card-text {
-  color: #555;
-}
-
-/* Buttons */
-.btn {
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #0a58ca; /* Darker shade of Bootstrap blue */
-}
-
-.btn-success:hover {
-  background-color: #198754; /* Bootstrap green */
-}
-
-/* Footer */
-footer {
-  font-size: 0.9rem;
-}
-
-/* Contact Form */
-form label {
-  font-weight: bold;
-  color: #333;
-}
-
-/* List Group Tweaks (Professional Experience) */
-.list-group-item {
-  background-color: #fff;
-  border: none;
-  padding: 12px 16px;
+.askuala-hero .btn {
+  border-radius: 30px;
+  padding: 10px 25px;
 }
 
 /* ==============================
-   Page-Specific Tweaks
+   About Section
    ============================== */
-
-/* Projects Page */
-.projects img {
-  border-radius: 8px;
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-/* Tech Page */
-.tech-stack .card img {
+/* ==============================
+   Tech Stack
+   ============================== */
+.tech-stack img {
   width: 80px;
   height: 80px;
   object-fit: contain;
   margin-bottom: 10px;
 }
-
-/* Askuala Page Hero */
-.askuala-hero {
-  background-color: #0d6efd; /* Bootstrap primary */
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.askuala-hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+/* ==============================
+   Projects
+   ============================== */
+#projects img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
-.askuala-hero p {
-  font-size: 1.2rem;
-  margin-top: 10px;
+/* ==============================
+   Experience
+   ============================== */
+#experience .list-group-item {
+  background: #fff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+}
+
+/* ==============================
+   Contact
+   ============================== */
+form label {
+  font-weight: 600;
+  color: #333;
+}
+form .btn {
+  border-radius: 8px;
+  font-weight: 600;
+}
+form .btn-success:hover {
+  background-color: #198754;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  font-size: 0.9rem;
+  background-color: #111 !important;
 }
 
 /* ==============================
    Responsive Fixes
    ============================== */
-
 @media (max-width: 768px) {
+  .askuala-hero h1 {
+    font-size: 2rem;
+  }
   .profile-pic {
     width: 120px;
     height: 120px;
   }
-
-  .navbar-brand {
-    font-size: 1rem;
-  }
-
-  .askuala-hero h1 {
-    font-size: 1.8rem;
-  }
-}
-/* Hero Section refinement */
-.hero {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
-  color: #fff;
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
-.hero h2 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #e2e8f0;
-}
-
-.hero .btn-outline-light {
-  border-color: #fff;
-  color: #fff;
-}
-
-.hero .btn-outline-light:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Social Icons */
-.social-icons a {
-  font-size: 1.5rem;
-  margin: 0 12px;
-  color: #f8f9fa;
-  transition: color 0.3s ease;
-}
-.social-icons a:hover {
-  color: #ffd43b;
 }
