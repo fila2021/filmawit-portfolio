@@ -1,169 +1,184 @@
-# 🌐 Filmawit Portfolio Website
+# 💻 Filmawit Portfolio – Front-End Development Project
 
-Welcome to my personal portfolio website! This project showcases who I am, what I do, and how to get in touch. It highlights my experience, projects, and contact details in a clean, user-friendly way.
+## 📖 Project Overview
 
----
+**Filmawit Portfolio** is a personal front-end website showcasing my **projects, professional experience, and technical skills**.
+The site demonstrates **responsive design, accessibility, and user-centered design principles**, and includes a contact form for visitors to reach out.
 
-## 📖 Table of Contents
-
-- [About the Project](#about-the-project)
-- [User Stories](#user-stories)
-- [Features](#features)
-- [Future Enhancements](#future-enhancements)
-- [Technologies Used](#technologies-used)
-- [Testing](#testing)
-
-  - [Manual Testing](#manual-testing)
-  - [Responsiveness Testing](#responsiveness-testing)
-  - [Validation Testing](#validation-testing)
-  - [User Stories Testing](#user-stories-testing)
-  - [Bugs and Fixes](#bugs-and-fixes)
-
-- [Deployment](#deployment)
-- [Credits](#credits)
+This project was built as part of the **User Centric Front-End Development Milestone Project**.
 
 ---
 
-## 📝 About the Project
+## 🎯 User Stories
 
-I created this website to share my professional journey and skills as a **Front-End Developer, Project Manager, and Educator**.
-The website includes:
+### External User Goals
 
-- An **About Me** section with background information.
-- A **Projects & Experience** section highlighting my work.
-- A **Tech Stack** section showcasing tools I use.
-- A **Contact Form** with email and LinkedIn integration.
+- As a visitor, I want to **see the developer’s profile and experience** so I can quickly understand their background.
+- As a visitor, I want to **view projects** with screenshots and descriptions so I can explore the developer’s work.
+- As a visitor, I want to **navigate easily across pages** without confusion.
+- As a visitor, I want to **contact the developer** through a simple form or social links.
 
-The goal of the project is to serve as an online CV and portfolio, easily accessible to employers, collaborators, and peers.
+### Site Owner Goals
 
----
-
-## 👩‍💻 User Stories
-
-As a user visiting this site:
-
-1. I want to **quickly learn who Filmawit is**, so I can understand her background.
-2. I want to **see examples of projects**, so I can judge her technical ability.
-3. I want to **view professional experience**, so I can understand her career history.
-4. I want to **check her tech stack**, so I know what tools she works with.
-5. I want to **easily contact her**, so I can reach out with opportunities.
+- Present my **projects and skills** professionally.
+- Provide an **accessible, responsive portfolio** that works on all devices.
+- Allow potential employers or collaborators to **get in touch easily**.
+- Showcase the use of **semantic HTML, CSS, and Bootstrap** to meet academic and industry standards.
 
 ---
 
 ## ✨ Features
 
-- **Responsive Design** – Works on desktop, tablet, and mobile.
-- **Navigation Bar** – Consistent across all pages.
-- **Projects Section** – Highlights real projects and future works-in-progress.
-- **Contact Form** – Simple way to reach out (tested with Code Institute’s formdump).
-- **Accessibility Considerations** – Semantic HTML, descriptive alt text for images.
+### 1. Home / About Me
+
+- Profile picture and short biography.
+- Introduction to professional background and learning journey.
+
+### 2. Projects
+
+- **Project Cards** with images, descriptions, and links:
+
+  - **Askuala** – a scholarship listing platform.
+  - **Portfolio Website** – this site itself.
+  - **Explore Tigray** – a travel website highlighting Ethiopian destinations.
+
+- Professional Experience section in list format.
+
+### 3. Tech Stack
+
+- Visual cards for **HTML5, CSS3, Bootstrap, Git & GitHub**.
+- Consistent styling for readability.
+
+### 4. Contact
+
+- **Contact form** with validation for required fields.
+- Email and LinkedIn links.
+- Submissions can be redirected to **Code Institute Formdump** for testing.
+
+### 5. Askuala (Standalone Project Page)
+
+- Dedicated landing page showcasing scholarship listings.
+- Structured sections with grid layout for scholarship cards.
+
+### 6. Responsive Design
+
+- Mobile-first design with **Bootstrap grid system**.
+- Works on **desktop, tablet, and mobile**.
 
 ---
 
-## 🚀 Future Enhancements
+## 🎨 Wireframes
 
-- Add **form validation with JavaScript**.
-- Include **live project demos** and GitHub repo links.
-- Improve **animations and interactivity** with CSS/JS.
-- Add **unit tests** for form validation and navigation.
+Wireframes were created to plan the layout before development.
+
+### Home
+
+![Home Wireframe](assets/docs/wireframes/home_detailed_wireframe.png)
+
+### Projects
+
+![Projects Wireframe](assets/docs/wireframes/projects_detailed_wireframe.png)
+
+### Tech Stack
+
+![Tech Stack Wireframe](assets/docs/wireframes/tech_detailed_wireframe.png)
+
+### Contact
+
+![Contact Wireframe](assets/docs/wireframes/contact_detailed_wireframe.png)
+
+---
+
+## 🖼️ Screenshots (Final Design)
+
+| Page / Feature       | Screenshot                                                      |
+| -------------------- | --------------------------------------------------------------- |
+| About Me Section     | ![About Screenshot](assets/docs/screenshots/about.png)          |
+| Projects Page        | ![Projects Screenshot](assets/docs/screenshots/projects.png)    |
+| Tech Stack Page      | ![Tech Stack Screenshot](assets/docs/screenshots/techstack.png) |
+| Contact Page         | ![Contact Screenshot](assets/docs/screenshots/contact.png)      |
+| Askuala Project Page | ![Askuala Screenshot](assets/docs/screenshots/askuala.png)      |
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – Page structure
-- **CSS3** – Styling and layout
-- **Git & GitHub** – Version control and hosting
-- **GitHub Pages** – Deployment
+- **HTML5** – semantic structure.
+- **CSS3** – styling and layout.
+- **Bootstrap 5** – responsive grid and components.
+- **Git & GitHub** – version control and deployment.
+- **GitHub Pages** – project hosting.
 
 ---
 
-## 🧪 Testing
+## ✅ Testing
 
-### 🔹 Manual Testing
+### HTML Validation
 
-#### Navigation
+- Passed **W3C Markup Validator** – no major errors.
 
-- **Expected:** Clicking links in the navbar should load the correct page.
-- **Testing:** Clicked **Home**, **Projects**, **Tech Stack**, and **Contact** across Chrome, Edge, and Safari.
-- **Result:** All links opened the correct page without errors.
-- **Fix:** None needed.
+### CSS Validation
 
-#### Contact Form
+- Passed **W3C Jigsaw Validator** – no major issues.
 
-- **Expected:** Form should not submit if fields are empty.
-- **Testing:** Tried submitting with missing fields.
-- **Result:** Validation error appeared; form did not submit.
-- **Fix:** None needed.
+### Responsiveness
 
-#### Projects Images
+- Tested on Chrome DevTools breakpoints (mobile, tablet, desktop).
+- Works across browsers (Chrome, Edge, Firefox, Safari).
 
-- **Expected:** All project images should load correctly.
-- **Testing:** Opened `projects.html` and `portfolio.html`.
-- **Result:** One image (`Project Three`) was initially broken due to a missing asset.
-- **Fix:** Updated to placeholder image – ✅ working now.
+### Performance
 
----
+- Checked with **Lighthouse** – high scores in performance, accessibility, SEO.
 
-### 🔹 Responsiveness Testing
+### Manual Testing
 
-Tested using **Responsive Design Checker** and browser dev tools:
-
-- **Desktop (1920px):** Layout centered, footer aligned at bottom. ✅
-- **Tablet (768px):** Grid layouts stack neatly, nav adjusts. ✅
-- **Mobile (375px):** Navigation collapses into stacked links, sections readable. ✅
+| Feature           | Test                                     | Result   |
+| ----------------- | ---------------------------------------- | -------- |
+| Navbar Links      | Click each → correct page loads          | ✅ Works |
+| Project Cards     | “View Project” opens correct link        | ✅ Works |
+| Contact Form      | Empty submission shows validation error  | ✅ Works |
+| Contact Form      | Valid submission → Formdump confirmation | ✅ Works |
+| Responsive Layout | Resize window → layout adjusts properly  | ✅ Works |
 
 ---
 
-### 🔹 Validation Testing
+## 🚀 Deployment
 
-- **HTML:** Passed with [W3C Validator](https://validator.w3.org/). ✅
-- **CSS:** Passed with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/). ✅
+- Deployed on **GitHub Pages**.
+- Steps:
 
-Screenshots of both validator results are included in `assets/screenshots/`.
+  1. Push code to GitHub repository.
+  2. Go to **Repo Settings → Pages**.
+  3. Deploy from `main` branch, root folder.
+  4. Access live site via GitHub Pages link.
 
----
-
-### 🔹 User Stories Testing
-
-1. **Background Info** – "About Me" clearly displayed on Home. ✅
-2. **Projects** – Shown in both `projects.html` and `portfolio.html`. ✅
-3. **Experience** – Listed under “Professional Experience”. ✅
-4. **Tech Stack** – Presented with logos and explanations. ✅
-5. **Contact** – Email, LinkedIn, and form available. ✅
+🔗 **Live Demo**: [Filmawit Portfolio](https://fila2021.github.io/filmawit-portfolio/)
 
 ---
 
-### 🔹 Bugs and Fixes
+## ♿ Accessibility
 
-| Bug                                                 | Cause                         | Fix                                                     |
-| --------------------------------------------------- | ----------------------------- | ------------------------------------------------------- |
-| Footer floated halfway up the page on short content | No min-height on main content | Applied CSS `min-height: calc(100vh - header - footer)` |
-| Broken project image                                | Wrong path                    | Replaced with working placeholder                       |
-| README incomplete                                   | Missing key sections          | Expanded with features, testing, deployment             |
-
----
-
-## 🌍 Deployment
-
-This site is deployed via **GitHub Pages**:
-
-🔗 [Live Demo](https://fila2021.github.io/filmawit-portfolio/)
-
-**Steps to Deploy:**
-
-1. Go to your GitHub repository.
-2. Navigate to **Settings > Pages**.
-3. Under **Source**, select the `main` branch and `/root`.
-4. Click **Save**.
-5. The live site link will appear at the top of the page.
+- All images include descriptive **alt text**.
+- High **color contrast** ensures readability.
+- Semantic HTML improves screen reader compatibility.
+- Forms include **labels** for accessibility.
 
 ---
 
-## 🙏 Credits
+## 🔮 Future Enhancements
 
-- All HTML and CSS code written by me.
-- Placeholder images from [via.placeholder.com](https://via.placeholder.com).
-- Inspiration and assessment guidance from **Code Institute**.
+- Add **JavaScript interactivity** (animations, form success messages).
+- Expand **Projects section** with more case studies.
+- Include a **downloadable CV**.
+- Add blog posts or updates section.
+
+---
+
+## 🙌 Credits
+
+- **Bootstrap 5**: [https://getbootstrap.com](https://getbootstrap.com)
+- **Form Handling**: [Code Institute Formdump](https://formdump.codeinstitute.net/)
+- **Images**: Portfolio assets and placeholders.
+- All other code written by **Filmawit Mekonen Gebreegziabher**.
 
 ---
