@@ -28,13 +28,21 @@ section.hero {
 
 /* Profile image styling */
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
+  max-width: 150px; /* ✅ ensures it never exceeds this */
+  width: 100%; /* responsive inside the max width */
+  height: auto; /* keep proportions */
+  border-radius: 50%; /* circular */
+  object-fit: cover; /* crops instead of stretching */
   display: block;
   margin: 0 auto 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 576px) {
+  .profile-pic {
+    max-width: 120px; /* ✅ smaller on mobile */
+  }
 }
 
 /* Card Tweaks */
