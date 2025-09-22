@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -22,27 +33,14 @@
     <main>
       <section class="contact-section">
         <h2>Let's Connect</h2>
-        <p>
-          Email:
-          <a href="mailto:filacrafts2012@gmail.com">filacrafts2012@gmail.com</a>
-        </p>
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/filmawit-mekonen" target="_blank"
-            >filmawit-mekonen</a
-          >
-        </p>
         <div class="form-wrapper">
-          <form>
+          <form action="https://formdump.codeinstitute.net/" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-
             <button type="submit">Send</button>
           </form>
         </div>
