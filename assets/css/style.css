@@ -32,9 +32,9 @@ section.hero {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto 20px;
   display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Card Tweaks */
@@ -126,7 +126,10 @@ form label {
   margin-top: 10px;
 }
 
-/* Responsive Fixes */
+/* ==============================
+   Responsive Fixes
+   ============================== */
+
 @media (max-width: 768px) {
   .profile-pic {
     width: 120px;
@@ -139,23 +142,5 @@ form label {
 
   .askuala-hero h1 {
     font-size: 1.8rem;
-  }
-}
-
-.profile-pic {
-  width: 150px; /* keeps a fixed size */
-  height: 150px; /* equal height for round shape */
-  object-fit: cover; /* crop to fit instead of stretching */
-  border-radius: 50%; /* makes it circular */
-  display: block;
-  margin: 0 auto 20px; /* centers inside container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive tweak for mobile */
-@media (max-width: 576px) {
-  .profile-pic {
-    width: 120px;
-    height: 120px;
   }
 }
