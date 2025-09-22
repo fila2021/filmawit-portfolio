@@ -73,31 +73,30 @@ Wireframes were created to plan the layout before development.
 
 ### Home
 
-![Home Wireframe](assets/docs/wireframes/home_detailed_wireframe.png)
+![Home Wireframe](assets/docs/wireframes/about.png)
 
 ### Projects
 
-![Projects Wireframe](assets/docs/wireframes/projects_detailed_wireframe.png)
+![Projects Wireframe](assets/docs/wireframes/projects.png)
 
 ### Tech Stack
 
-![Tech Stack Wireframe](assets/docs/wireframes/tech_detailed_wireframe.png)
+![Tech Stack Wireframe](assets/docs/wireframes/techstack.png)
 
 ### Contact
 
-![Contact Wireframe](assets/docs/wireframes/contact_detailed_wireframe.png)
+![Contact Wireframe](assets/docs/wireframes/contact.png)
 
 ---
 
 ## 🖼️ Screenshots (Final Design)
 
-| Page / Feature       | Screenshot                                                      |
-| -------------------- | --------------------------------------------------------------- |
-| About Me Section     | ![About Screenshot](assets/docs/screenshots/about.png)          |
-| Projects Page        | ![Projects Screenshot](assets/docs/screenshots/projects.png)    |
-| Tech Stack Page      | ![Tech Stack Screenshot](assets/docs/screenshots/techstack.png) |
-| Contact Page         | ![Contact Screenshot](assets/docs/screenshots/contact.png)      |
-| Askuala Project Page | ![Askuala Screenshot](assets/docs/screenshots/askuala.png)      |
+| Page / Feature   | Screenshot                                                      |
+| ---------------- | --------------------------------------------------------------- |
+| About Me Section | ![About Screenshot](assets/docs/screenshots/about.png)          |
+| Projects Page    | ![Projects Screenshot](assets/docs/screenshots/projects.png)    |
+| Tech Stack Page  | ![Tech Stack Screenshot](assets/docs/screenshots/techstack.png) |
+| Contact Page     | ![Contact Screenshot](assets/docs/screenshots/contact.png)      |
 
 ---
 
