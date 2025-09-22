@@ -143,16 +143,16 @@ form label {
 }
 
 .profile-pic {
-  width: 150px; /* fixed width */
-  height: 150px; /* fixed height */
-  object-fit: cover; /* keeps proportions without stretching */
-  border-radius: 50%; /* makes it round */
+  width: 150px; /* keeps a fixed size */
+  height: 150px; /* equal height for round shape */
+  object-fit: cover; /* crop to fit instead of stretching */
+  border-radius: 50%; /* makes it circular */
   display: block;
-  margin: 0 auto 20px; /* centers the image */
+  margin: 0 auto 20px; /* centers inside container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: make it responsive on smaller devices */
+/* Responsive tweak for mobile */
 @media (max-width: 576px) {
   .profile-pic {
     width: 120px;
