@@ -1,60 +1,169 @@
-# Filmawit Portfolio Website
+# 🌐 Filmawit Portfolio Website
 
-Welcome to my personal portfolio website! This project showcases who I am, what I do, and how to get in touch. Built using HTML and CSS, it highlights my experience, projects, and contact details in a simple, clean, and easy-to-navigate way.
+Welcome to my personal portfolio website! This project showcases who I am, what I do, and how to get in touch. It highlights my experience, projects, and contact details in a clean, user-friendly way.
 
-## What This Project Is About
+---
 
-I created this website to share my professional journey and skills as a Project Manager and Educator. It’s designed to give visitors a quick overview of my background, some of the projects I've worked on, and ways to connect with me.
+## 📖 Table of Contents
 
-## Why It’s Useful
+- [About the Project](#about-the-project)
+- [User Stories](#user-stories)
+- [Features](#features)
+- [Future Enhancements](#future-enhancements)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
 
-Whether you’re a potential employer, collaborator, or just curious, this portfolio provides a straightforward way to learn about my work and get in touch. The site is responsive and accessible, so it works well on all devices and for a wide range of users.
+  - [Manual Testing](#manual-testing)
+  - [Responsiveness Testing](#responsiveness-testing)
+  - [Validation Testing](#validation-testing)
+  - [User Stories Testing](#user-stories-testing)
+  - [Bugs and Fixes](#bugs-and-fixes)
 
-## How It Works
+- [Deployment](#deployment)
+- [Credits](#credits)
 
-The website has three main sections:
+---
 
-- **Home:** An introduction about me and what I do.
-- **Projects:** Highlights of my professional projects and experience.
-- **Contact:** A simple form and links to reach out to me.
+## 📝 About the Project
 
-I built the navigation menu to be consistent across all pages, making it easy to explore.
+I created this website to share my professional journey and skills as a **Front-End Developer, Project Manager, and Educator**.
+The website includes:
 
-## Technologies Used
+- An **About Me** section with background information.
+- A **Projects & Experience** section highlighting my work.
+- A **Tech Stack** section showcasing tools I use.
+- A **Contact Form** with email and LinkedIn integration.
 
-- HTML5 for page structure
-- CSS3 for styling and layout
-- No external frameworks yet, but I’m open to adding Bootstrap or others later
+The goal of the project is to serve as an online CV and portfolio, easily accessible to employers, collaborators, and peers.
 
-## Deployment
+---
 
-This site is hosted on GitHub Pages and can be viewed live here:  
-[https://fila2021.github.io/filmawit-portfolio/](https://fila2021.github.io/filmawit-portfolio/)
+## 👩‍💻 User Stories
 
-## Attribution
+As a user visiting this site:
 
-- All HTML and CSS code is written by me.
-- No external code or libraries are included at this stage.
-- Should I add any third-party code or assets in the future, I will clearly note and attribute them here.
+1. I want to **quickly learn who Filmawit is**, so I can understand her background.
+2. I want to **see examples of projects**, so I can judge her technical ability.
+3. I want to **view professional experience**, so I can understand her career history.
+4. I want to **check her tech stack**, so I know what tools she works with.
+5. I want to **easily contact her**, so I can reach out with opportunities.
 
-## What’s Next?
+---
 
-- Make the site fully responsive for mobile devices with media queries.
-- Add form validation and interactive elements with JavaScript.
-- Include screenshots and documentation for testing.
-- Possibly incorporate a CSS framework like Bootstrap for faster styling.
+## ✨ Features
 
-## Testing
+- **Responsive Design** – Works on desktop, tablet, and mobile.
+- **Navigation Bar** – Consistent across all pages.
+- **Projects Section** – Highlights real projects and future works-in-progress.
+- **Contact Form** – Simple way to reach out (tested with Code Institute’s formdump).
+- **Accessibility Considerations** – Semantic HTML, descriptive alt text for images.
 
-I have documented the testing process for this website to ensure it works as expected.
-- Verified that all navigation links function correctly across pages.
-- Tested the website on multiple browsers (Chrome, Edge) to ensure consistent appearance and behavior.
-- Checked responsiveness on different screen sizes, including desktop, tablet, and mobile devices.
-- Validated the contact form fields for required input and proper form submission behavior.
+---
 
-All testing notes and results are maintained here in the README for transparency and easy reference.
+## 🚀 Future Enhancements
 
+- Add **form validation with JavaScript**.
+- Include **live project demos** and GitHub repo links.
+- Improve **animations and interactivity** with CSS/JS.
+- Add **unit tests** for form validation and navigation.
 
-Thanks for stopping by my portfolio! Feel free to reach out if you want to connect.
+---
 
-© 2025 Filmawit Mekonen Gebreegziabher
+## 🛠️ Technologies Used
+
+- **HTML5** – Page structure
+- **CSS3** – Styling and layout
+- **Git & GitHub** – Version control and hosting
+- **GitHub Pages** – Deployment
+
+---
+
+## 🧪 Testing
+
+### 🔹 Manual Testing
+
+#### Navigation
+
+- **Expected:** Clicking links in the navbar should load the correct page.
+- **Testing:** Clicked **Home**, **Projects**, **Tech Stack**, and **Contact** across Chrome, Edge, and Safari.
+- **Result:** All links opened the correct page without errors.
+- **Fix:** None needed.
+
+#### Contact Form
+
+- **Expected:** Form should not submit if fields are empty.
+- **Testing:** Tried submitting with missing fields.
+- **Result:** Validation error appeared; form did not submit.
+- **Fix:** None needed.
+
+#### Projects Images
+
+- **Expected:** All project images should load correctly.
+- **Testing:** Opened `projects.html` and `portfolio.html`.
+- **Result:** One image (`Project Three`) was initially broken due to a missing asset.
+- **Fix:** Updated to placeholder image – ✅ working now.
+
+---
+
+### 🔹 Responsiveness Testing
+
+Tested using **Responsive Design Checker** and browser dev tools:
+
+- **Desktop (1920px):** Layout centered, footer aligned at bottom. ✅
+- **Tablet (768px):** Grid layouts stack neatly, nav adjusts. ✅
+- **Mobile (375px):** Navigation collapses into stacked links, sections readable. ✅
+
+---
+
+### 🔹 Validation Testing
+
+- **HTML:** Passed with [W3C Validator](https://validator.w3.org/). ✅
+- **CSS:** Passed with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/). ✅
+
+Screenshots of both validator results are included in `assets/screenshots/`.
+
+---
+
+### 🔹 User Stories Testing
+
+1. **Background Info** – "About Me" clearly displayed on Home. ✅
+2. **Projects** – Shown in both `projects.html` and `portfolio.html`. ✅
+3. **Experience** – Listed under “Professional Experience”. ✅
+4. **Tech Stack** – Presented with logos and explanations. ✅
+5. **Contact** – Email, LinkedIn, and form available. ✅
+
+---
+
+### 🔹 Bugs and Fixes
+
+| Bug                                                 | Cause                         | Fix                                                     |
+| --------------------------------------------------- | ----------------------------- | ------------------------------------------------------- |
+| Footer floated halfway up the page on short content | No min-height on main content | Applied CSS `min-height: calc(100vh - header - footer)` |
+| Broken project image                                | Wrong path                    | Replaced with working placeholder                       |
+| README incomplete                                   | Missing key sections          | Expanded with features, testing, deployment             |
+
+---
+
+## 🌍 Deployment
+
+This site is deployed via **GitHub Pages**:
+
+🔗 [Live Demo](https://fila2021.github.io/filmawit-portfolio/)
+
+**Steps to Deploy:**
+
+1. Go to your GitHub repository.
+2. Navigate to **Settings > Pages**.
+3. Under **Source**, select the `main` branch and `/root`.
+4. Click **Save**.
+5. The live site link will appear at the top of the page.
+
+---
+
+## 🙏 Credits
+
+- All HTML and CSS code written by me.
+- Placeholder images from [via.placeholder.com](https://via.placeholder.com).
+- Inspiration and assessment guidance from **Code Institute**.
+
+---
