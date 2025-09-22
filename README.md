@@ -112,22 +112,49 @@ Wireframes were created to plan the layout before development.
 
 ## ✅ Testing
 
-### HTML Validation
+Testing was carried out systematically to ensure all features, links, and forms work correctly across devices and browsers.
 
-- Passed **W3C Markup Validator** – no major errors.
+---
 
-### CSS Validation
+### 1. HTML Validation
 
-- Passed **W3C Jigsaw Validator** – no major issues.
+- Tool: [W3C Markup Validator](https://validator.w3.org/)
+- Result: No errors found across all pages.
+- Screenshot: ![HTML Validation](assets/docs/screenshots/html-validation.png)
 
-### Responsiveness
+---
 
-- Tested on Chrome DevTools breakpoints (mobile, tablet, desktop).
-- Works across browsers (Chrome, Edge, Firefox, Safari).
+### 2. CSS Validation
 
-### Performance
+- Tool: [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+- Result: Passed with no errors.
+- Screenshot: ![CSS Validation](assets/docs/screenshots/css-validation.png)
 
-- Checked with **Lighthouse** – high scores in performance, accessibility, SEO.
+---
+
+### 3. Responsiveness
+
+- Tool: [Chrome DevTools] & [Responsive Design Checker](https://responsivedesignchecker.com/)
+- Devices tested:
+  - Desktop (1920px)
+  - Tablet (768px)
+  - Mobile (375px)
+- Result: Layout adapts seamlessly.
+- Screenshot Example: ![Responsive Test](assets/docs/screenshots/responsive.png)
+
+---
+
+### 4. Lighthouse Performance
+
+- Tool: Chrome Lighthouse Audit
+- Results:
+  - Performance: 95+
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+- Screenshot: ![Lighthouse](assets/docs/screenshots/lighthouse.png)
+
+---
 
 ### Manual Testing
 
@@ -164,6 +191,30 @@ Wireframes were created to plan the layout before development.
 
 ---
 
+## 🙌 Credits
+
+- **Bootstrap 5**: [https://getbootstrap.com](https://getbootstrap.com)
+- **Form Handling**: [Code Institute Formdump](https://formdump.codeinstitute.net/)
+- **Images**: Portfolio assets and placeholders.
+- All other code written by **Filmawit Mekonen Gebreegziabher**.
+
+---
+
+### Bugs & Fixes
+
+- **Bug**: Footer floated mid-page on short content.
+
+  - **Fix**: Used `d-flex flex-column min-vh-100` on `<body>` with `mt-auto` on `<footer>`.
+
+- **Bug**: Explore Tigray project image broken.
+
+  - **Fix**: Corrected image path & file extension.
+
+- **Bug**: Commit history messages too vague.
+  - **Fix**: Adopted [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) (e.g., `feat(projects): add Explore Tigray card`).
+
+---
+
 ## 🔮 Future Enhancements
 
 - Add **JavaScript interactivity** (animations, form success messages).
@@ -173,11 +224,6 @@ Wireframes were created to plan the layout before development.
 
 ---
 
-## 🙌 Credits
+### Open Issues
 
-- **Bootstrap 5**: [https://getbootstrap.com](https://getbootstrap.com)
-- **Form Handling**: [Code Institute Formdump](https://formdump.codeinstitute.net/)
-- **Images**: Portfolio assets and placeholders.
-- All other code written by **Filmawit Mekonen Gebreegziabher**.
-
----
+- None at this stage. All planned features validated.
