@@ -141,3 +141,21 @@ form label {
     font-size: 1.8rem;
   }
 }
+
+.profile-pic {
+  width: 150px; /* fixed width */
+  height: 150px; /* fixed height */
+  object-fit: cover; /* keeps proportions without stretching */
+  border-radius: 50%; /* makes it round */
+  display: block;
+  margin: 0 auto 20px; /* centers the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: make it responsive on smaller devices */
+@media (max-width: 576px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
