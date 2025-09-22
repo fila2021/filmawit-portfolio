@@ -73,19 +73,7 @@ Wireframes were created to plan the layout before development.
 
 ### Home
 
-![Home Wireframe](assets/docs/wireframes/about.png)
-
-### Projects
-
-![Projects Wireframe](assets/docs/wireframes/projects.png)
-
-### Tech Stack
-
-![Tech Stack Wireframe](assets/docs/wireframes/techstack.png)
-
-### Contact
-
-![Contact Wireframe](assets/docs/wireframes/contact.png)
+![Wireframe](assets/docs/wireframes/portfolio_wireframe.png)
 
 ---
 
