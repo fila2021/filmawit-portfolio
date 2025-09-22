@@ -1,341 +1,103 @@
-/* ===========================
-   Reset & Base
-=========================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ==============================
+   Global Styles & Overrides
+   ============================== */
 
-html,
 body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Bootstrap light background */
   line-height: 1.6;
-  background-color: #f8f8f8;
-  color: #333;
 }
 
-main {
-  flex: 1;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Navbar overrides */
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
-/* ===========================
-   Header & Navigation
-=========================== */
-header {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-header h1 {
-  margin-bottom: 8px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 12px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
+.nav-link.active {
   font-weight: 600;
-}
-
-nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ===========================
-   Footer
-=========================== */
-footer {
+/* Hero Section */
+section#home,
+section.hero {
+  padding: 80px 20px;
   text-align: center;
-  padding: 15px;
-  background: #333;
-  color: #fff;
-  margin-top: auto;
 }
 
-/* ===========================
-   Profile Section
-=========================== */
-.profile-section {
-  text-align: center;
-  padding: 30px 20px;
-  background: #fff;
-  border-radius: 12px;
-  max-width: 900px;
-  margin: 20px auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-}
-
+/* Profile image styling */
 .profile-pic {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 20px;
+  display: block;
 }
 
-/* ===========================
-   Tech Stack Grid
-=========================== */
-.tech-stack {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 40px auto;
-}
-
-.tech-item {
-  background: #fff;
-  padding: 20px;
+/* Card Tweaks */
+.card {
   border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.tech-item:hover {
-  transform: translateY(-6px);
-}
-
-.tech-item img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-/* ===========================
-   Projects Grid
-=========================== */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 20px;
-}
-
-.project-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.project-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.project-card h3 {
-  margin-bottom: 10px;
+.card-title {
   color: #222;
+  font-weight: bold;
 }
 
-.project-card p {
+.card-text {
   color: #555;
-  text-align: center;
-  margin-bottom: 15px;
 }
 
-/* ===========================
-   Buttons
-=========================== */
+/* Buttons */
 .btn {
-  background-color: #333;
-  color: white;
-  padding: 10px 18px;
-  text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  cursor: pointer;
-  border: none;
   transition: background-color 0.3s ease;
-  min-width: 120px;
-  text-align: center;
 }
 
-.btn:hover:not(:disabled) {
-  background-color: #555;
+.btn-primary:hover {
+  background-color: #0a58ca; /* Darker shade of Bootstrap blue */
 }
 
-.btn-disabled {
-  background-color: #999;
-  cursor: not-allowed;
+.btn-success:hover {
+  background-color: #198754; /* Bootstrap green */
 }
 
-/* ===========================
-   Forms
-=========================== */
-.form-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0;
+/* Footer */
+footer {
+  font-size: 0.9rem;
 }
 
-form {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
+/* Contact Form */
 form label {
   font-weight: bold;
   color: #333;
 }
 
-form input,
-form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-form button {
-  background-color: #333;
-  color: white;
-  padding: 12px;
+/* List Group Tweaks (Professional Experience) */
+.list-group-item {
+  background-color: #fff;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  padding: 12px 16px;
 }
 
-form button:hover {
-  background-color: #555;
-}
-
-/* ===========================
-   Hero Section (Askuala)
-=========================== */
-.hero-text {
-  text-align: center;
-  padding: 80px 20px;
-  background-color: #3498db;
-  color: white;
-}
-
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.section {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 40px auto;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-}
-
-.scholarships-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-  margin-top: 20px;
-}
-
-.scholarship-card {
-  background: #eaf4fc;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(52, 152, 219, 0.2);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.scholarship-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.35);
-}
-
-.scholarship-card h3 {
-  color: #2c3e50;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-}
-
-.scholarship-card p {
-  color: #34495e;
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-.scholarship-link {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #3498db;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.scholarship-link:hover {
-  background-color: #2980b9;
-}
-
-/* ===========================
-   Responsive
-=========================== */
+/* Responsive Fixes */
 @media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
+  .profile-pic {
+    width: 120px;
+    height: 120px;
   }
-  main,
-  form {
-    padding: 10px;
-  }
-  .hero-text h1 {
-    font-size: 2rem;
+
+  .navbar-brand {
+    font-size: 1rem;
   }
 }
