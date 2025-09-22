@@ -128,7 +128,10 @@ Testing was carried out systematically to ensure all features, links, and forms 
   - Tablet (768px)
   - Mobile (375px)
 - Result: Layout adapts seamlessly.
-- Screenshot Example: ![Responsive Test](assets/docs/screenshots/responsive.png)
+- Screenshot Example:
+  ![Responsive Test](assets/docs/screenshots/responsive-tab.png)
+  ![Responsive Test](assets/docs/screenshots/responsive-desktop.png)
+  ![Responsive Test](assets/docs/screenshots/responsive-phone.png)
 
 ---
 
