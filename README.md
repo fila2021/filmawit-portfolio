@@ -2,84 +2,95 @@
 
 ## 📖 Project Overview
 
-**Filmawit Portfolio** is a personal front-end website showcasing my **projects, professional experience, and technical skills**.
-The site demonstrates **responsive design, accessibility, and user-centered design principles**, and includes a contact form for visitors to reach out.
+**Filmawit Portfolio** is a responsive personal website that showcases my **projects, technical skills, and professional experience**.
+It is built with **HTML, CSS, and Bootstrap** to demonstrate **semantic structure, accessibility, and user-centered design principles**.
 
-This project was built as part of the **User Centric Front-End Development Milestone Project**.
+🔑 _Tagline_: _“A responsive portfolio website showcasing projects, technical skills, and experience — built with clean, modern front-end design.”_
+
+This project was created as part of the **User-Centric Front-End Development Milestone Project**.
 
 ---
 
-## 🎯 User Stories
+## 🎯 User Stories & Acceptance Criteria
 
 ### External User Goals
 
-- As a visitor, I want to **see the developer’s profile and experience** so I can quickly understand their background.
-- As a visitor, I want to **view projects** with screenshots and descriptions so I can explore the developer’s work.
-- As a visitor, I want to **navigate easily across pages** without confusion.
-- As a visitor, I want to **contact the developer** through a simple form or social links.
+1. **View developer’s background**
+
+   - As a visitor, I want to **see the developer’s profile and experience** so I can quickly understand their skills.
+     ✅ Acceptance Criteria: About section with profile picture and biography.
+
+2. **Explore projects**
+
+   - As a visitor, I want to **view projects with screenshots and descriptions** so I can explore the developer’s work.
+     ✅ Acceptance Criteria: Project cards with images, descriptions, and working links.
+
+3. **Navigate easily**
+
+   - As a visitor, I want to **navigate easily across the site** without confusion.
+     ✅ Acceptance Criteria: Responsive navbar with smooth scrolling.
+
+4. **Contact the developer**
+
+   - As a visitor, I want to **contact the developer** through a form or social links.
+     ✅ Acceptance Criteria: Contact form with validation + alternative email/LinkedIn links.
 
 ### Site Owner Goals
 
-- Present my **projects and skills** professionally.
-- Provide an **accessible, responsive portfolio** that works on all devices.
-- Allow potential employers or collaborators to **get in touch easily**.
-- Showcase the use of **semantic HTML, CSS, and Bootstrap** to meet academic and industry standards.
+- Showcase **projects, skills, and experience** professionally.
+- Ensure **mobile-first, responsive design** for accessibility across devices.
+- Provide a **direct way for employers/collaborators to reach out**.
 
 ---
 
 ## ✨ Features
 
-### 1. Home / About Me
+1. **Home / About Me**
 
-- Profile picture and short biography.
-- Introduction to professional background and learning journey.
+   - Hero section with introduction and call-to-action.
+   - Profile picture with short biography.
 
-### 2. Projects
+2. **Projects**
 
-- **Project Cards** with images, descriptions, and links:
+   - Interactive project cards with screenshots and links:
 
-  - **Askuala** – a scholarship listing platform.
-  - **Portfolio Website** – this site itself.
-  - **Explore Tigray** – a travel website highlighting Ethiopian destinations.
+     - **Askuala** – Scholarship platform.
+     - **Form** – Admin login and registration form.
+     - **Explore Tigray** – Tourism website.
 
-- Professional Experience section in list format.
+3. **Tech Stack**
 
-### 3. Tech Stack
+   - Visual cards for **HTML5, CSS3, Bootstrap, Git & GitHub**.
 
-- Visual cards for **HTML5, CSS3, Bootstrap, Git & GitHub**.
-- Consistent styling for readability.
+4. **Professional Experience**
 
-### 4. Contact
+   - Clean list format showcasing work history.
 
-- **Contact form** with validation for required fields.
-- Email and LinkedIn links.
-- Submissions can be redirected to **Code Institute Formdump** for testing.
+5. **Contact**
 
-### 5. Askuala (Standalone Project Page)
+   - Form with required field validation.
+   - Email & LinkedIn links for alternative contact.
 
-- Dedicated landing page showcasing scholarship listings.
-- Structured sections with grid layout for scholarship cards.
+6. **Responsive Design**
 
-### 6. Responsive Design
-
-- Mobile-first design with **Bootstrap grid system**.
-- Works on **desktop, tablet, and mobile**.
+   - Fully responsive across **desktop, tablet, and mobile**.
+   - Navbar collapses into a hamburger menu on smaller screens.
 
 ---
 
 ## 🎨 Wireframes
 
-Wireframes were created to plan the layout before development.
+Wireframes were designed for planning the layout before development.
 
-### Home
+- **Desktop + Mobile** views included.
 
 ![Wireframe](assets/docs/wireframes/portfolio_wireframe.png)
 
 ---
 
-## 🖼️ Screenshots (Final Design)
+## 🖼️ Final Design Screenshots
 
-| Page / Feature   | Screenshot                                                      |
+| Section          | Screenshot                                                      |
 | ---------------- | --------------------------------------------------------------- |
 | About Me Section | ![About Screenshot](assets/docs/screenshots/about.png)          |
 | Projects Page    | ![Projects Screenshot](assets/docs/screenshots/projects.png)    |
@@ -92,129 +103,118 @@ Wireframes were created to plan the layout before development.
 
 - **HTML5** – semantic structure.
 - **CSS3** – styling and layout.
-- **Bootstrap 5** – responsive grid and components.
-- **Git & GitHub** – version control and deployment.
-- **GitHub Pages** – project hosting.
+- **Bootstrap 5** – responsive grid and reusable components.
+- **Git & GitHub** – version control and collaboration.
+- **GitHub Pages** – hosting and deployment.
 
 ---
 
 ## ✅ Testing
 
-Testing was carried out systematically to ensure all features, links, and forms work correctly across devices and browsers.
-
----
+Testing was carried out to ensure features, responsiveness, and accessibility worked correctly across devices and browsers.
 
 ### 1. HTML Validation
 
 - Tool: [W3C Markup Validator](https://validator.w3.org/)
-- Result: No errors found across all pages.
-- Screenshot: ![HTML Validation](assets/docs/screenshots/html-validation.png)
-
----
+- ✅ Result: No errors.
 
 ### 2. CSS Validation
 
 - Tool: [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
-- Result: Passed with no errors.
-- Screenshot: ![CSS Validation](assets/docs/screenshots/css-validation.png)
-
----
+- ✅ Result: No errors.
 
 ### 3. Responsiveness
 
-- Tool: [Chrome DevTools] & [Responsive Design Checker](https://responsivedesignchecker.com/)
-- Devices tested:
-  - Desktop (1920px)
-  - Tablet (768px)
-  - Mobile (375px)
-- Result: Layout adapts seamlessly.
-- Screenshot Example:
-  ![Responsive Test](assets/docs/screenshots/responsive-tab.png)
-  ![Responsive Test](assets/docs/screenshots/responsive-desktop.png)
-  ![Responsive Test](assets/docs/screenshots/responsive-phone.png)
+- Tool: \[Chrome DevTools] & [Responsive Design Checker](https://responsivedesignchecker.com/)
+- ✅ Result: Layout adapts seamlessly.
 
----
+| Device           | Tested          | Result   |
+| ---------------- | --------------- | -------- |
+| Desktop (1920px) | Chrome, Edge    | ✅ Works |
+| Tablet (768px)   | Safari, Chrome  | ✅ Works |
+| Mobile (375px)   | Chrome, Firefox | ✅ Works |
 
-### 4. Lighthouse Performance
+### 4. Lighthouse Audit
 
-- Tool: Chrome Lighthouse Audit
+- Tool: Chrome Lighthouse
 - Results:
-  - Performance: 95+
-  - Accessibility: 100
-  - Best Practices: 100
-  - SEO: 100
-- Screenshot: ![Lighthouse](assets/docs/screenshots/lighthouse.png)
+
+  - **Performance**: ✅
+  - **Accessibility**: ✅
+  - **Best Practices**: ✅
 
 ---
 
-### Manual Testing
+## 📝 Manual Testing
 
 | Feature           | Test                                     | Result   |
 | ----------------- | ---------------------------------------- | -------- |
-| Navbar Links      | Click each → correct page loads          | ✅ Works |
-| Project Cards     | “View Project” opens correct link        | ✅ Works |
-| Contact Form      | Empty submission shows validation error  | ✅ Works |
-| Contact Form      | Valid submission → Formdump confirmation | ✅ Works |
-| Responsive Layout | Resize window → layout adjusts properly  | ✅ Works |
+| Navbar Links      | Click each → correct section scrolls     | ✅ Works |
+| Project Cards     | “View Project” → opens correct page/link | ✅ Works |
+| Contact Form      | Empty submission → validation error      | ✅ Works |
+| Contact Form      | Valid submission → redirects to Formdump | ✅ Works |
+| Responsive Layout | Resize browser → adjusts automatically   | ✅ Works |
+| Accessibility     | Tested keyboard navigation + alt text    | ✅ Works |
 
 ---
 
 ## 🚀 Deployment
 
-- Deployed on **GitHub Pages**.
-- Steps:
+The project is deployed on **GitHub Pages**.
 
-  1. Push code to GitHub repository.
-  2. Go to **Repo Settings → Pages**.
-  3. Deploy from `main` branch, root folder.
-  4. Access live site via GitHub Pages link.
+### Live Demo
 
-🔗 **Live Demo**: [Filmawit Portfolio](https://fila2021.github.io/filmawit-portfolio/)
+🔗 [Filmawit Portfolio](https://fila2021.github.io/filmawit-portfolio/)
+
+### Local Deployment
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/fila2021/filmawit-portfolio.git
+   ```
+
+2. Navigate into the project folder.
+3. Open `index.html` in your browser.
 
 ---
 
 ## ♿ Accessibility
 
-- All images include descriptive **alt text**.
-- High **color contrast** ensures readability.
-- Semantic HTML improves screen reader compatibility.
-- Forms include **labels** for accessibility.
+- ✅ All images include descriptive **alt text**.
+- ✅ High **color contrast** ensures readability.
+- ✅ Fully responsive for screen scaling.
+- ✅ Forms include **labels** for screen readers.
+- ✅ Tested with **keyboard-only navigation**.
 
 ---
 
 ## 🙌 Credits
 
-- **Bootstrap 5**: [https://getbootstrap.com](https://getbootstrap.com)
-- **Form Handling**: [Code Institute Formdump](https://formdump.codeinstitute.net/)
-- **Images**: Portfolio assets and placeholders.
-- All other code written by **Filmawit Mekonen Gebreegziabher**.
+- **Bootstrap 5** → [https://getbootstrap.com](https://getbootstrap.com)
+- **Form Handling** → [Code Institute Formdump](https://formdump.codeinstitute.net/)
+- **Images** → Project assets and placeholders.
+- All other code authored by **Filmawit Mekonen Gebreegziabher**.
 
 ---
 
-### Bugs & Fixes
+## 🐛 Bugs & Fixes
 
-- **Bug**: Footer floated mid-page on short content.
-
-  - **Fix**: Used `d-flex flex-column min-vh-100` on `<body>` with `mt-auto` on `<footer>`.
-
-- **Bug**: Explore Tigray project image broken.
-
-  - **Fix**: Corrected image path & file extension.
-
-- **Bug**: Commit history messages too vague.
-  - **Fix**: Adopted [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) (e.g., `feat(projects): add Explore Tigray card`).
+- **Footer floated mid-page** → Fixed with `d-flex flex-column min-vh-100`.
+- **Explore Tigray project image broken** → Corrected file path.
+- **Commit history too vague** → Adopted **Conventional Commits** (e.g., `add Explore Tigray card`).
 
 ---
 
 ## 🔮 Future Enhancements
 
-- Add **JavaScript interactivity** (animations, form success messages).
+- Add **JavaScript animations** for smoother interactivity.
 - Expand **Projects section** with more case studies.
 - Include a **downloadable CV**.
-- Add blog posts or updates section.
+- Add **blog section** with developer updates.
 
 ---
 
-### Open Issues
+## ✅ Open Issues
 
 - None at this stage. All planned features validated.
