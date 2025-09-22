@@ -28,11 +28,10 @@ section.hero {
 
 /* Profile image styling */
 .profile-pic {
-  max-width: 150px; /* ✅ ensures it never exceeds this */
-  width: 100%; /* responsive inside the max width */
-  height: auto; /* keep proportions */
-  border-radius: 50%; /* circular */
-  object-fit: cover; /* crops instead of stretching */
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* ✅ crops instead of squeezing */
+  border-radius: 50%; /* ✅ keeps it circular */
   display: block;
   margin: 0 auto 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
