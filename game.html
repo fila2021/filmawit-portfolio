@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Only Game</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+      section {
+        display: none;
+        width: 100%;
+      }
+      section:target {
+        display: block;
+      }
+      .start,
+      .win {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .maze {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .maze-box {
+        width: 400px;
+        height: 300px;
+        background: #222;
+        position: relative;
+        border: 3px solid #fff;
+        margin: 20px auto;
+      }
+      .goal {
+        width: 50px;
+        height: 50px;
+        background: green;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        line-height: 50px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      .trap {
+        position: absolute;
+        background: red;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .trap:hover {
+        opacity: 1;
+      }
+      .trap1 {
+        top: 50px;
+        left: 100px;
+        width: 200px;
+        height: 30px;
+      }
+      .trap2 {
+        top: 150px;
+        left: 50px;
+        width: 300px;
+        height: 30px;
+      }
+      .trap3 {
+        top: 220px;
+        left: 120px;
+        width: 200px;
+        height: 30px;
+      }
+      a.button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 18px;
+        background: #4caf50;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section 1: Start -->
+    <section id="start" class="start">
+      <h1>Welcome to the CSS Maze!</h1>
+      <p>Use your mouse to avoid traps and reach the goal.</p>
+      <a class="button" href="#maze">Start Game</a>
+    </section>
+
+    <!-- Section 2: Game -->
+    <section id="maze" class="maze">
+      <h2>Navigate the Maze!</h2>
+      <div class="maze-box">
+        <div class="trap trap1"></div>
+        <div class="trap trap2"></div>
+        <div class="trap trap3"></div>
+        <a href="#win" class="goal">Goal</a>
+      </div>
+      <p>Hint: Don't hover over the red traps!</p>
+    </section>
+
+    <!-- Section 3: Win -->
+    <section id="win" class="win">
+      <h1>🎉 You Win!</h1>
+      <p>Great job beating the maze.</p>
+      <a class="button" href="#start">Play Again</a>
+    </section>
+  </body>
+</html>
