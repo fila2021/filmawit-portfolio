@@ -36,6 +36,13 @@
         border: 1px solid #ccc;
         border-radius: 5px;
       }
+      .error {
+        color: red;
+        font-size: 0.9rem;
+        margin-top: -5px;
+        margin-bottom: 8px;
+        display: none;
+      }
       button,
       a.button {
         display: inline-block;
@@ -68,15 +75,20 @@
       <form
         action="https://formdump.codeinstitute.net/"
         method="POST"
+        class="validate-form"
         novalidate
       >
         <input type="text" name="username" placeholder="Username" required />
+        <div class="error">Please enter your username</div>
+
         <input
           type="password"
           name="password"
           placeholder="Password"
           required
         />
+        <div class="error">Please enter your password</div>
+
         <button type="submit">Login</button>
       </form>
       <a href="#register" class="switch">New user? Register here</a>
@@ -88,17 +100,26 @@
       <form
         action="https://formdump.codeinstitute.net/"
         method="POST"
+        class="validate-form"
         novalidate
       >
         <input type="text" name="fullname" placeholder="Full Name" required />
+        <div class="error">Please enter your full name</div>
+
         <input type="email" name="email" placeholder="Email" required />
+        <div class="error">Please enter a valid email</div>
+
         <input type="text" name="username" placeholder="Username" required />
+        <div class="error">Please choose a username</div>
+
         <input
           type="password"
           name="password"
           placeholder="Password"
           required
         />
+        <div class="error">Please enter a password</div>
+
         <button type="submit">Register</button>
       </form>
       <a href="#login" class="switch">Already have an account? Login</a>
@@ -117,6 +138,28 @@
       if (!window.location.hash) {
         window.location.hash = "#login";
       }
+
+      // Custom validation
+      document.querySelectorAll(".validate-form").forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          let valid = true;
+          form.querySelectorAll("input[required]").forEach((input) => {
+            const error = input.nextElementSibling;
+            if (
+              !input.value.trim() ||
+              (input.type === "email" && !input.checkValidity())
+            ) {
+              error.style.display = "block";
+              valid = false;
+            } else {
+              error.style.display = "none";
+            }
+          });
+          if (!valid) {
+            e.preventDefault();
+          }
+        });
+      });
     </script>
   </body>
 </html>
