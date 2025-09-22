@@ -82,7 +82,7 @@ This project was created as part of the **User-Centric Front-End Development Mil
 
 Wireframes were designed for planning the layout before development.
 
-- **Desktop + Mobile** views included.
+- \*\*Desktop views included.
 
 ![Wireframe](assets/docs/wireframes/portfolio_wireframe.png)
 
